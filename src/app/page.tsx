@@ -11,9 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return (
-    <div className="flex h-full w-full items-baseline justify-center bg-red-300 p-4 pt-2">
-      <Button variant="destructive">Hello</Button>
-    </div>
-  );
+  return <main>Hello</main>;
 }

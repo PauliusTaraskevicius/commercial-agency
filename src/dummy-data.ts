@@ -5,6 +5,7 @@ export const DUMMY_DATA = [
     about: "Food banks in Norway",
     time: "01:19",
     video: "/videos/hills.mp4",
+    slug: "a-christmas-story",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const DUMMY_DATA = [
     about: "Stavanger business region",
     time: "00:50",
     video: "/videos/driving_desert.mp4",
+    slug: "bli-for-live",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const DUMMY_DATA = [
     about: "Shell Norway",
     time: "03:31",
     video: "/videos/ocean.mp4",
+    slug: "energy-to-power-progress",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const DUMMY_DATA = [
     about: "Easee",
     time: "03:08",
     video: "/videos/vessel.mp4",
+    slug: "good-energy",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export const DUMMY_DATA = [
     about: "PIO",
     time: "02:24",
     video: "/videos/wind_energy.mp4",
+    slug: "free-your-business",
   },
   {
     id: 6,
@@ -40,5 +45,6 @@ export const DUMMY_DATA = [
     about: "Altibox",
     time: "04:11",
     video: "/videos/winter_landscape.mp4",
+    slug: "bella-ciao-netflix",
   },
 ];
