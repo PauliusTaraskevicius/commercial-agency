@@ -2,7 +2,7 @@
 
 const Page = () => {
   return (
-    <div>Page</div>
+    <div className="bg-blue-500">ALL WORK</div>
   )
 }
 

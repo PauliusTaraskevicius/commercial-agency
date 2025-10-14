@@ -26,7 +26,7 @@ export default function RootLayout({
         className={`${kannit.className} antialiased`}
         suppressHydrationWarning
       >
-        <main className="flex h-[100dvh] flex-col bg-blue-800 pt-[30px]">
+        <main className="flex h-[100dvh] flex-col pt-[30px]">
           {" "}
           <Header />
           {children}
