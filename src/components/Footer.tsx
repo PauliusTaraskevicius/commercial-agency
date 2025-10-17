@@ -1,6 +1,14 @@
+'use client'
+
+import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const Footer = () => {
+  const path = usePathname();
+
+  const isNotHome = path !== "/";
+
   return (
     <footer className="relative z-[99999]">
       <div className="w-full px-2 py-1">
@@ -9,7 +17,10 @@ export const Footer = () => {
           <div className="max-md:hidden md:col-span-2">
             <Link
               href="https://moxey.no/lets-talk/"
-              className="default-text-hover hover:text-background/50 text-background font-bold tracking-[0.02em] whitespace-nowrap uppercase"
+              className={cn(
+                "default-text-hover hover:text-background/50 text-background text-sm font-bold tracking-[0.02em] whitespace-nowrap uppercase",
+                isNotHome && "text-black",
+              )}
               target=""
             >
               {" "}
@@ -20,7 +31,10 @@ export const Footer = () => {
             {" "}
             <Link
               href="mailto:hello@moxey.no"
-              className="default-text-hover hover:text-background/50 text-background font-bold tracking-[0.02em] whitespace-nowrap uppercase"
+              className={cn(
+                "default-text-hover hover:text-background/50 text-background text-sm font-bold tracking-[0.02em] whitespace-nowrap uppercase",
+                isNotHome && "text-black",
+              )}
               target=""
             >
               {" "}
@@ -31,7 +45,10 @@ export const Footer = () => {
             {" "}
             <Link
               href="tel:+47%20916%2099%20927"
-              className="default-text-hover hover:text-background/50 text-background font-bold tracking-[0.02em] whitespace-nowrap uppercase"
+              className={cn(
+                "default-text-hover hover:text-background/50 text-background text-sm font-bold tracking-[0.02em] whitespace-nowrap uppercase",
+                isNotHome && "text-black",
+              )}
               target=""
             >
               {" "}

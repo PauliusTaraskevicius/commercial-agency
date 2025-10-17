@@ -1,12 +1,9 @@
 "use client";
-
+import { useState } from "react";
 import { LandingVideo } from "@/components/LandingVideo";
-import { Button } from "@/components/ui/button";
 import { WorkItem } from "@/components/WorkItem";
 import { DUMMY_DATA } from "@/dummy-data";
 import Link from "next/link";
-
-import { useState } from "react";
 
 export default function Home() {
   const [videoSrc, setVideoSrc] = useState<number>(1);
@@ -37,13 +34,16 @@ export default function Home() {
       <LandingVideo src={sourceVid} />
       <div className="z-10 grid h-full grid-cols-12 gap-x-2 px-2">
         <div className="col-span-4 flex flex-1 items-center md:col-span-2">
-          <div className="relative pr-4">
-            <h1 className="text-background text-3xl font-bold lg:text-5xl">
-              MOXEY
-            </h1>
-            <span className="absolute -top-1 right-0 text-sm text-white lg:text-lg">
-              &reg;
-            </span>
+          <div>
+            <div className="relative pr-4">
+              <h1 className="text-background top-0 text-2xl font-bold lg:text-4xl">
+                MOXEY
+              </h1>
+
+              <span className="absolute -top-1 right-0 text-sm text-white lg:text-lg">
+                &reg;
+              </span>
+            </div>
           </div>
         </div>
 

@@ -14,5 +14,8 @@ export const LandingVideo = ({ src }: LandingVideoProps) => {
     >
       <source src={src} type="video/mp4" />
     </video>
+
   );
 };
+
+

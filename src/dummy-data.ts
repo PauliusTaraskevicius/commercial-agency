@@ -6,6 +6,7 @@ export const DUMMY_DATA = [
     time: "01:19",
     video: "/videos/hills.mp4",
     slug: "a-christmas-story",
+    date: "11-04-2025",
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const DUMMY_DATA = [
     time: "00:50",
     video: "/videos/driving_desert.mp4",
     slug: "bli-for-live",
+    date: "28-03-2025",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const DUMMY_DATA = [
     time: "03:31",
     video: "/videos/ocean.mp4",
     slug: "energy-to-power-progress",
+    date: "05-02-2025",
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const DUMMY_DATA = [
     time: "03:08",
     video: "/videos/vessel.mp4",
     slug: "good-energy",
+    date: "01-01-2025",
   },
   {
     id: 5,
@@ -38,13 +42,15 @@ export const DUMMY_DATA = [
     time: "02:24",
     video: "/videos/wind_energy.mp4",
     slug: "free-your-business",
+    date: "01-11-2025",
   },
   {
     id: 6,
     title: "Bella ciao - netflix",
     about: "Altibox",
     time: "04:11",
-    video: "/videos/winter_landscape.mp4",
+    video: "/videos/waves.mp4",
     slug: "bella-ciao-netflix",
+    date: "14-06-2025",
   },
 ];
