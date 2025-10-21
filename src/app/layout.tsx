@@ -23,13 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kannit.className} antialiased`}
+        className={`${kannit.className} flex min-h-screen flex-col antialiased`}
         suppressHydrationWarning
       >
         <main className="flex h-[100dvh] flex-col pt-[30px]">
           {" "}
           <Header />
-          {children}
+          <main className="flex-1">{children}</main>
           <Footer />
         </main>
       </body>
