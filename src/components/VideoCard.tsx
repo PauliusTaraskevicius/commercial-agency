@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef } from "react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 interface Props {
   title: string;
@@ -8,14 +9,34 @@ interface Props {
   time: string;
   video: string;
   date: string;
+  autoPlay?: boolean;
+  slug?: string;
 }
 
-export const VideoCard = ({ about, date, time, title, video }: Props) => {
+export const VideoCard = ({
+  about,
+  date,
+  time,
+  title,
+  video,
+  autoPlay = false,
+  slug,
+}: Props) => {
   const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    return () => {
+      if (videoRef.current) {
+        videoRef.current.pause();
+        videoRef.current.src = "";
+        videoRef.current.load();
+      }
+    };
+  }, []);
 
   const videoHoverHandler = () => {
     if (videoRef.current) {
-      videoRef.current.play();
+      videoRef.current.play().catch(() => {});
     }
   };
 
@@ -37,7 +58,7 @@ export const VideoCard = ({ about, date, time, title, video }: Props) => {
           <video
             ref={videoRef}
             className="aspect-[16/9] w-full object-cover object-center"
-            autoPlay={false}
+            autoPlay={autoPlay}
             loop={true}
             muted
             src={video}
@@ -48,7 +69,7 @@ export const VideoCard = ({ about, date, time, title, video }: Props) => {
         </div>
       </div>
       <div className="mt-1 flex flex-row gap-x-2 uppercase">
-        <div className="text-semibold text-bold flex w-1/2 flex-col">
+        <div className="text-semibold text-bold flex w-1/2 flex-col font-semibold">
           {title}
           <span className="relative opacity-30">
             <span className="absolute top-0 left-0 whitespace-nowrap transition-opacity duration-500 group-hover:opacity-0">
@@ -60,7 +81,7 @@ export const VideoCard = ({ about, date, time, title, video }: Props) => {
             </span>
           </span>
         </div>
-        <div className="w-1/2">{date}</div>
+        <div className="w-1/2 font-semibold">{date}</div>
       </div>
     </div>
   );
