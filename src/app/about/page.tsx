@@ -8,7 +8,7 @@ const titanOne = Titan_One({
 const Page = () => {
   return (
     <div
-      className={`${titanOne.className} mb-20 grid grid-cols-12 gap-x-2 px-2 md:mb-28`}
+      className={`${titanOne.className} mb-20 grid grid-cols-12 gap-x-2 px-2`}
     >
       <div className="col-span-12 pt-20 md:col-span-11 md:pt-28">
         <span className="text-3xl lg:text-[85px]">

@@ -1,2 +1,0 @@
-1 - landing video smooth transitions
-2 - fix video stutterin on change
