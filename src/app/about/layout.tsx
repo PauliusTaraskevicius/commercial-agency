@@ -1,9 +1,19 @@
+"use client";
+
+import { useEffect } from "react";
+
+import React from "react";
+
 const Layout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className="absolute inset-0 -z-10 bg-[#7e958d]">
-      <div className="relative z-10">{children}</div>
-    </div>
-  );
+  useEffect(() => {
+    document.body.style.backgroundColor = "#7e958d";
+
+    return () => {
+      document.body.style.backgroundColor = "";
+    };
+  }, []);
+
+  return <div>{children}</div>;
 };
 
 export default Layout;

@@ -1,3 +1,2 @@
 1 - landing video smooth transitions
 2 - fix video stutterin on change
-3 - fix footer position in desktop and footer

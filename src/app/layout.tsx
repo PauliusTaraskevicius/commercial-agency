@@ -29,7 +29,7 @@ export default function RootLayout({
         <main className="flex h-[100dvh] flex-col pt-[30px]">
           {" "}
           <Header />
-          <main className="flex-1">{children}</main>
+          {children}
           <Footer />
         </main>
       </body>

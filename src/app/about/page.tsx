@@ -12,10 +12,7 @@ const Page = () => {
     >
       <div className="col-span-12 pt-20 md:col-span-11 md:pt-28">
         <span className="text-3xl lg:text-[85px]">
-          <h1>
-            FOUNDED AND RUN BY 
-            COMPREHENSIVE STORYTELLERS.
-          </h1>
+          <h1>FOUNDED AND RUN BY COMPREHENSIVE STORYTELLERS.</h1>
         </span>
       </div>
       <div className="col-span-12 pt-20 md:col-span-6 md:pt-28">
