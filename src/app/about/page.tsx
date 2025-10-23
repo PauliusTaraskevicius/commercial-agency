@@ -11,9 +11,9 @@ const Page = () => {
       className={`${titanOne.className} mb-20 grid grid-cols-12 gap-x-2 px-2 md:mb-28`}
     >
       <div className="col-span-12 pt-20 md:col-span-11 md:pt-28">
-        <span className="text-3xl lg:text-6xl">
+        <span className="text-3xl lg:text-[85px]">
           <h1>
-            FOUNDED AND RUN BY <br />
+            FOUNDED AND RUN BY 
             COMPREHENSIVE STORYTELLERS.
           </h1>
         </span>
