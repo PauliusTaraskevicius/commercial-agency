@@ -1,5 +1,7 @@
 import { DUMMY_DATA } from "@/dummy-data";
 import { notFound } from "next/navigation";
+import { VideoPage } from "./components/VideoPage";
+import { div } from "framer-motion/client";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -19,7 +21,11 @@ const Page = async ({ params }: PageProps) => {
     notFound();
   }
 
-  return <div className="bg-blue-500">{itemData?.title}</div>;
+  return (
+    <div className="flex h-screen items-center justify-center">
+      <VideoPage {...itemData} />
+    </div>
+  );
 };
 
 export default Page;

@@ -2,8 +2,6 @@
 
 import { useEffect } from "react";
 
-import React from "react";
-
 const Layout = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     document.body.style.backgroundColor = "#7e958d";
