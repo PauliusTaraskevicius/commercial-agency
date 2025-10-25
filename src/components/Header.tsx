@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Timer } from "./Timer";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { MainTitleHeader } from "./MainTitleHeader";
 
 export const Header = () => {
   const path = usePathname();
@@ -13,6 +14,11 @@ export const Header = () => {
   return (
     <nav className="fixed top-0 left-0 z-[99999] w-full px-2 py-1">
       <div className="grid grid-cols-12 gap-x-1 md:gap-x-2">
+        {isNotHome && (
+          <div className="max-w-[138px]">
+            <MainTitleHeader />
+          </div>
+        )}
         <div className="col-span-4 pt-1 md:col-span-2" />
         <div className="col-span-3 md:col-span-2">
           <Link
