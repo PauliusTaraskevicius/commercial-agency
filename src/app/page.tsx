@@ -4,6 +4,7 @@ import { LandingVideo } from "@/components/LandingVideo";
 import { WorkItem } from "@/components/WorkItem";
 import { DUMMY_DATA } from "@/dummy-data";
 import Link from "next/link";
+import { MainTitleHeader } from "@/components/MainTitleHeader";
 
 export default function Home() {
   const [videoSrc, setVideoSrc] = useState<number>(1);
@@ -34,17 +35,7 @@ export default function Home() {
       <LandingVideo src={sourceVid} />
       <div className="z-10 grid h-full grid-cols-12 gap-x-2 px-2">
         <div className="col-span-4 flex flex-1 items-center md:col-span-2">
-          <div>
-            <div className="relative pr-4">
-              <h1 className="text-background top-0 text-2xl font-bold lg:text-4xl">
-                MOXEY
-              </h1>
-
-              <span className="absolute -top-1 right-0 text-sm text-white lg:text-lg">
-                &reg;
-              </span>
-            </div>
-          </div>
+          <MainTitleHeader />
         </div>
 
         <div className="col-span-8 flex flex-col justify-evenly md:col-span-2">
