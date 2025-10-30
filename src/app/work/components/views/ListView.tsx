@@ -14,12 +14,13 @@ export const ListView = () => {
     <div className="relative col-span-12 mt-1 -mb-4 md:-mb-28">
       <div className="is-active top-0 left-0 mt-2 flex flex-col [&.is-changing]:absolute">
         {DUMMY_DATA.map((item) => (
-          <div key={item.id} className="relative mb-4">
+          <Link
+            href={`/work/${item.slug}`}
+            key={item.id}
+            className="relative mb-4"
+          >
             <div className="absolute top-0 left-0 z-10 h-full w-full md:hidden"></div>
-            <Link
-              href={`/work/${item.slug}`}
-              className="group relative block cursor-pointer pb-4 [&>*]:pointer-events-none"
-            >
+            <div className="group relative block cursor-pointer pb-4 [&>*]:pointer-events-none">
               <div className="absolute top-1/2 left-0 z-20 grid h-0 w-full grid-cols-12 gap-x-2 opacity-0 transition-opacity duration-500 md:group-hover:opacity-100">
                 <div className="z-10 col-span-8 col-start-5 aspect-[16/9] -translate-y-1/2 md:col-span-4 md:col-start-5">
                   <VideoCard {...item} autoPlay={true} />
@@ -48,8 +49,8 @@ export const ListView = () => {
                   </span>
                 </span>
               </div>
-            </Link>
-          </div>
+            </div>
+          </Link>
         ))}
       </div>
     </div>

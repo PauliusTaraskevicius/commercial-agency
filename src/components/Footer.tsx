@@ -45,7 +45,7 @@ export const Footer = () => {
               target=""
             >
               {" "}
-              hello@moxey.no{" "}
+              commercial@nexum.lt{" "}
             </Link>
           </div>
           <div className="col-span-4 max-md:text-right md:col-span-2">
@@ -59,7 +59,7 @@ export const Footer = () => {
               target=""
             >
               {" "}
-              +47 916 99 927{" "}
+              063025111{" "}
             </Link>
           </div>
         </div>
