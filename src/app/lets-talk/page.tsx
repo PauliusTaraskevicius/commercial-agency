@@ -14,8 +14,8 @@ const Page = () => {
       <div className="col-span-11 py-20 md:py-28">
         <span className="text-5xl sm:text-6xl lg:text-[85px]">
           <h1>
-            WE PROVIDE OUR SEVICES WORLDIWDE. <br />
-            OUR HOME IS STAVANGER, LITHUANIA.
+            WE PROVIDE OUR SEVICES WORLDWIDE. <br />
+            OUR HOME IS KAUNAS, LITHUANIA.
           </h1>
         </span>
       </div>
@@ -23,7 +23,7 @@ const Page = () => {
         <span>
           <p className="mb-1 text-sm">WHAT WE DO</p>
           <p className="mb-1 cursor-pointer text-3xl transition hover:text-black/60 sm:text-4xl xl:text-6xl">
-            WINCOMM@MOXEY.LT
+            COMMERCIAL@NEXUM.LT
           </p>
           <p className="mb-1 text-sm">LETS TALK</p>
           <p className="cursor-pointer text-3xl transition hover:text-black/60 lg:text-6xl">

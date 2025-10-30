@@ -23,9 +23,10 @@ const Page = () => {
       <div className="col-span-12 pt-10 md:col-span-6 md:mr-[7.5%] md:pt-28">
         <div>
           <h2 className="text-4xl">
-            Moxey makes commercials, branded content and other forms of moving
-            pictures. We merge creative insight with production expertise to
-            make inspired narratives from the ground up.
+            Nexum creates commercials, branded content, and other forms of
+            moving pictures designed to inspire, engage, and endure. We believe
+            every brand has a story worth telling — one that can move people
+            when told with authenticity and craft. 
           </h2>
         </div>
       </div>
@@ -37,11 +38,11 @@ const Page = () => {
       <div className="col-span-12 pt-10 md:col-span-6 md:mr-[7.5%] md:pt-28">
         <div>
           <h2 className="text-2xl">
-            Since its inception in 2016, Moxey has always taken pride in finding
-            the perfect match between creative concept, budget, level of
-            ambition and target audience. From concept writing to casting calls,
-            from location scouting to post-production, we handle every aspect of
-            the filmmaking process with care and attention to detail.
+            Since our founding in 2025, Nexum has specialized in aligning
+            creative vision with strategy — finding the perfect balance between
+            concept, budget, ambition, and audience. We manage every stage of
+            the production journey, ensuring a seamless process from first idea
+            to final frame.
           </h2>
         </div>
       </div>

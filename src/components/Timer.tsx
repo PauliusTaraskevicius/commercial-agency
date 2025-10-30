@@ -1,10 +1,16 @@
 "use client";
 
+import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export const Timer = () => {
   const [time, setTime] = useState(new Date());
   const [isMounted, setIsMounted] = useState<boolean>(false);
+
+  const path = usePathname();
+
+  const isNotHome = path !== "/";
 
   useEffect(() => {
     setIsMounted(true);
@@ -18,7 +24,12 @@ export const Timer = () => {
   }
 
   return (
-    <div className="text-background hidden py-1 text-[12.5px] font-bold uppercase lg:block">
+    <div
+      className={cn(
+        "text-background hidden py-1 text-[12.5px] font-bold uppercase lg:block",
+        isNotHome && "text-black",
+      )}
+    >
       {time
         .toLocaleTimeString("en-US", {
           hour: "2-digit",

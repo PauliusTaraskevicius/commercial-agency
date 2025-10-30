@@ -29,19 +29,19 @@ export const MainTitleHeader = () => {
         }}
         className="cursor-pointer"
       >
-        <div className="relative pr-4">
+        <div className="relative inline-block">
           <h1
             className={cn(
-              "text-background top-0 text-2xl font-bold lg:text-4xl",
-              !isHome && "text-black",
+              "text-background text-2xl font-bold lg:text-4xl",
+              mounted && !isHome && "text-black",
             )}
           >
-            MOXEY
+            NEXUM
           </h1>
           <span
             className={cn(
-              "absolute -top-1 right-0 text-sm text-white lg:text-lg",
-              !isHome && "text-black",
+              "absolute top-0 -right-3 text-xs text-white lg:-right-4 lg:text-sm",
+              mounted && !isHome && "text-black",
             )}
           >
             &reg;
