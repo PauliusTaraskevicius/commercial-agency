@@ -26,7 +26,7 @@ export const Header = () => {
           <Link
             href="/work"
             className={cn(
-              "hover:text-background/50 text-background text-sm font-bold tracking-[0.02em] whitespace-nowrap uppercase transition",
+              "hover:text-background/50 text-background text-[11px] font-bold tracking-[0.02em] whitespace-nowrap uppercase transition",
               isNotHome && "text-black",
             )}
           >
@@ -37,7 +37,7 @@ export const Header = () => {
           <Link
             href="/about"
             className={cn(
-              "hover:text-background/50 text-background text-sm font-bold tracking-[0.02em] whitespace-nowrap uppercase transition",
+              "hover:text-background/50 text-background text-[11px] font-bold tracking-[0.02em] whitespace-nowrap uppercase transition",
               isNotHome && "text-black",
             )}
           >
@@ -48,7 +48,7 @@ export const Header = () => {
           <Link
             href="/lets-talk"
             className={cn(
-              "hover:text-background/50 text-background text-sm font-bold tracking-[0.02em] whitespace-nowrap uppercase transition",
+              "hover:text-background/50 text-background text-[11px] font-bold tracking-[0.02em] whitespace-nowrap uppercase transition",
               isNotHome && "text-black",
             )}
           >

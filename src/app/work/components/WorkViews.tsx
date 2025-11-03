@@ -36,12 +36,12 @@ export const WorkViews = () => {
           </span>
         </div>
         <div className="col-span-12 grid grid-cols-12 gap-x-2 pt-32 md:pt-64">
-          <div className="col-span-3 text-sm">PROJECTS</div>
+          <div className="col-span-3 text-[11px]">PROJECTS</div>
           <div className="col-span-1 col-start-12 flex flex-row justify-end gap-x-4 md:gap-x-7">
             <div
               onClick={handleGridView}
               className={cn(
-                "is-active cursor-pointer text-sm whitespace-nowrap opacity-30 transition-opacity duration-500 [&.is-active]:opacity-100",
+                "is-active cursor-pointer text-[11px] whitespace-nowrap opacity-30 transition-opacity duration-500 [&.is-active]:opacity-100",
                 gridView && "font-semibold",
               )}
             >
@@ -50,7 +50,7 @@ export const WorkViews = () => {
             <div
               onClick={handleListView}
               className={cn(
-                "is-active cursor-pointer text-sm whitespace-nowrap opacity-30 transition-opacity duration-500 [&.is-active]:opacity-100",
+                "is-active cursor-pointer text-[11px] whitespace-nowrap opacity-30 transition-opacity duration-500 [&.is-active]:opacity-100",
                 listView && "font-semibold",
               )}
             >

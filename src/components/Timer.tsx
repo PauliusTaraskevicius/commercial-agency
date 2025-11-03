@@ -26,7 +26,7 @@ export const Timer = () => {
   return (
     <div
       className={cn(
-        "text-background hidden py-1 text-[12.5px] font-bold uppercase lg:block",
+        "text-background hidden py-1 text-[11px] font-bold uppercase lg:block",
         isNotHome && "text-black",
       )}
     >

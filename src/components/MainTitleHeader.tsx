@@ -32,7 +32,7 @@ export const MainTitleHeader = () => {
         <div className="relative inline-block">
           <h1
             className={cn(
-              "text-background text-2xl font-bold lg:text-4xl",
+              "text-background text-2xl font-bold lg:text-3xl",
               mounted && !isHome && "text-black",
             )}
           >

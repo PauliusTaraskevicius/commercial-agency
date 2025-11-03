@@ -56,14 +56,14 @@ export const VideoPage = ({ title, about, time, video, slug, date }: Props) => {
               {isPlaying ? (
                 <>
                   <Pause className="size-12" fill="white" />
-                  <span className="text-sm whitespace-nowrap uppercase">
+                  <span className="text-[11px] whitespace-nowrap uppercase">
                     [ Pause ]
                   </span>
                 </>
               ) : (
                 <>
                   <Play className="size-12" fill="white" />
-                  <span className="text-sm whitespace-nowrap uppercase">
+                  <span className="text-[11px] whitespace-nowrap uppercase">
                     [ Play ]
                   </span>
                 </>
@@ -75,10 +75,10 @@ export const VideoPage = ({ title, about, time, video, slug, date }: Props) => {
         <div className="mt-4 grid grid-cols-12 gap-x-2">
           <div className="col-span-6 flex flex-col uppercase md:col-span-6">
             <span className="font-semibold">{title}</span>
-            <span className="text-sm opacity-70">{about}</span>
+            <span className="text-[11px] opacity-70">{about}</span>
           </div>
           <div className="col-span-6 flex justify-end md:col-span-6">
-            <span className="text-sm">[ {time} ]</span>
+            <span className="text-[11px]">[ {time} ]</span>
           </div>
         </div>
       </div>

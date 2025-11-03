@@ -25,7 +25,7 @@ export const Footer = () => {
             <Link
               href="https://moxey.no/lets-talk/"
               className={cn(
-                "default-text-hover hover:text-background/50 text-background text-sm font-bold tracking-[0.02em] whitespace-nowrap uppercase",
+                "default-text-hover hover:text-background/50 text-background text-[11px] font-bold tracking-[0.02em] whitespace-nowrap uppercase",
                 isNotHome && "text-black transition hover:text-black/60",
               )}
               target=""
@@ -39,7 +39,7 @@ export const Footer = () => {
             <Link
               href="mailto:hello@moxey.no"
               className={cn(
-                "default-text-hover hover:text-background/50 text-background text-sm font-bold tracking-[0.02em] whitespace-nowrap uppercase",
+                "default-text-hover hover:text-background/50 text-background text-[11px] font-bold tracking-[0.02em] whitespace-nowrap uppercase",
                 isNotHome && "text-black transition hover:text-black/60",
               )}
               target=""
@@ -53,7 +53,7 @@ export const Footer = () => {
             <Link
               href="tel:+47%20916%2099%20927"
               className={cn(
-                "default-text-hover hover:text-background/50 text-background text-sm font-bold tracking-[0.02em] whitespace-nowrap uppercase",
+                "default-text-hover hover:text-background/50 text-background text-[11px] font-bold tracking-[0.02em] whitespace-nowrap uppercase",
                 isNotHome && "text-black transition hover:text-black/60",
               )}
               target=""
