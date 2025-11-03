@@ -12,19 +12,19 @@ export default function Home() {
   function handleVideoBackground(videoId: number) {
     switch (videoId) {
       case 1:
-        return "/videos/hills.mp4";
+        return process.env.NEXT_PUBLIC_VIDEO_HILLS!;
       case 2:
-        return "/videos/driving_desert.mp4";
+        return process.env.NEXT_PUBLIC_VIDEO_DESERT!;
       case 3:
-        return "/videos/ocean.mp4";
+        return process.env.NEXT_PUBLIC_VIDEO_OCEAN!;
       case 4:
-        return "/videos/vessel.mp4";
+        return process.env.NEXT_PUBLIC_VIDEO_VESSEL!;
       case 5:
-        return "/videos/wind_energy.mp4";
+        return process.env.NEXT_PUBLIC_VIDEO_WIND!;
       case 6:
-        return "/videos/waves.mp4";
+        return process.env.NEXT_PUBLIC_VIDEO_WAVES!;
       default:
-        return "/videos/waves.mp4";
+        return process.env.NEXT_PUBLIC_VIDEO_WAVES!;
     }
   }
 
@@ -51,8 +51,8 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="font-exposure relative -z-[10] col-span-4 col-start-9 flex max-w-[430px] items-center leading-[1.125] tracking-wide max-md:hidden">
-          <span className="text-background flex items-center text-3xl font-bold tracking-tight md:text-3xl">
+        <div className="font-exposure relative -z-[10] col-span-4 col-start-9 flex max-w-[430px] items-center text-[32px] leading-[1.125] tracking-wide max-md:hidden">
+          <span className="text-background flex items-center text-3xl font-bold tracking-tight md:text-5xl">
             Inspired narrative from the ground up.
           </span>
         </div>
