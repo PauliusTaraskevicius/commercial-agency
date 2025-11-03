@@ -69,19 +69,19 @@ export const VideoCard = ({
         </div>
       </div>
       <div className="mt-1 flex flex-row gap-x-2 uppercase">
-        <div className="text-semibold text-bold flex w-1/2 flex-col font-semibold">
+        <div className="text-semibold text-bold flex w-1/2 flex-col font-semibold text-[11px]">
           {title}
           <span className="relative opacity-30">
-            <span className="absolute top-0 left-0 whitespace-nowrap transition-opacity duration-500 group-hover:opacity-0">
+            <span className="absolute top-0 left-0 whitespace-nowrap transition-opacity duration-500 group-hover:opacity-0 text-[11px]">
               {" "}
               [ {about} ]{" "}
             </span>
-            <span className="absolute top-0 left-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+            <span className="absolute top-0 left-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-[11px]">
               {time}
             </span>
           </span>
         </div>
-        <div className="w-1/2 font-semibold">{date}</div>
+        <div className="w-1/2 font-semibold text-[11px]">{date}</div>
       </div>
     </div>
   );

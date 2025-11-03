@@ -51,8 +51,8 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="font-exposure relative -z-[10] col-span-4 col-start-9 flex max-w-[430px] items-center text-[32px] leading-[1.125] tracking-wide max-md:hidden">
-          <span className="text-background flex items-center text-3xl font-bold tracking-tight md:text-5xl">
+        <div className="font-exposure relative -z-[10] col-span-4 col-start-9 flex max-w-[430px] items-center leading-[1.125] tracking-wide max-md:hidden">
+          <span className="text-background flex items-center text-3xl font-bold tracking-tight md:text-3xl">
             Inspired narrative from the ground up.
           </span>
         </div>

@@ -33,18 +33,18 @@ export const ListView = () => {
               </span>
               <div className="grid grid-cols-12 gap-x-2 uppercase opacity-30">
                 <span className="relative col-span-7 md:col-span-4 2xl:col-span-2">
-                  <span className="absolute top-0 left-0 transition-opacity duration-500 group-hover:opacity-0">
+                  <span className="absolute top-0 left-0 transition-opacity duration-500 group-hover:opacity-0 text-sm">
                     [ {item.about} ]
                   </span>
-                  <span className="absolute top-0 left-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <span className="absolute top-0 left-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-sm">
                     {item.time}
                   </span>
                 </span>
                 <span className="relative col-span-5 md:col-span-4 2xl:col-span-2">
-                  <span className="absolute top-0 left-0 transition-opacity duration-500 group-hover:opacity-0">
+                  <span className="absolute top-0 left-0 transition-opacity duration-500 group-hover:opacity-0 text-sm">
                     {item.date}
                   </span>
-                  <span className="absolute top-0 left-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <span className="absolute top-0 left-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-sm">
                     [ view ]
                   </span>
                 </span>
